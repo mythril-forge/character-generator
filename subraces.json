@@ -26,5 +26,81 @@
 				]
 			}
 		}
+	},
+
+
+	"dwarf": {
+		"hill": {
+			"ability score bonuses": {
+				"wisdom": 1
+			},
+			"dwarven toughness": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+		},
+		"mountain": {
+			"ability score bonuses": {
+				"strength": 2
+			},
+			"proficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				]
+			}
+		}
+	},
+
+
+	"elf": {
+		"high": {
+			"ability score bonuses": {
+				"intelligence": 1
+			},
+			"movement": 30,
+			"proficiencies": {
+				"weapons": [
+					"longsword",
+					"shortbow",
+					"longbow"
+				]
+			},
+			"extra proficiencies": {
+				"languages": [
+					1,
+					"any"
+				]
+			},
+			"darkvision": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"cantrip": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+		},
+		"wood": {
+			"ability score bonuses": {
+				"wisdom": 1
+			},
+			"movement": 35,
+			"proficiencies": {
+				"weapons": [
+					"longsword",
+					"shortbow",
+					"longbow"
+				]
+			},
+			"darkvision": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"mask of the wild": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+		},
+		"dark": {
+			"ability score bonuses": {
+				"charisma": 1
+			},
+			"movement": 30,
+			"proficiencies": {
+				"weapons": [
+					"rapiers",
+					"hand crossbows"
+				]
+			},
+			"superior darkvision": "Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"sunlight sensitivity": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
+			"drow magic": "You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once per day; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the darkness spell once per day; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+		}
 	}
 }

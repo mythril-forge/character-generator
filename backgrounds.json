@@ -1,0 +1,201 @@
+{
+	"acolyte": {
+		"proficiencies": {
+			"skills": [
+				"insight",
+				"religion"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				2,
+				"any"
+			]
+		}
+	},
+	"charlatan": {
+		"proficiencies": {
+			"skills": [
+				"deception",
+				"sleight of hand"
+			],
+			"tools": [
+				"disguise kit",
+				"forgery kit"
+			]
+		}
+	},
+	"criminal": {
+		"proficiencies": {
+			"skills": [
+				"deception",
+				"stealth"
+			],
+			"tools": [
+				"thieves' tools"
+			]
+		},
+		"extra proficiencies": {
+			"tools": [
+				1,
+				"gaming set"
+			]
+		}
+	},
+	"entertainer": {
+		"proficiencies": {
+			"skills": [
+				"disguise kit"
+			]
+		},
+		"extra proficiencies": {
+			"tools": [
+				1,
+				"musical instrument"
+			]
+		}
+	},
+	"folk hero": {
+		"proficiencies": {
+			"skills": [
+				"animal handling",
+				"survival"
+			],
+			"tools": [
+				"vehicles (land)"
+			]
+		},
+		"extra proficiencies": {
+			"tools": [
+				1,
+				"artisan's tools"
+			]
+		}
+	},
+	"guild artisan": {
+		"proficiencies": {
+			"skills": [
+				"insight",
+				"persuasion"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				1,
+				"any"
+			],
+			"tools": [
+				1,
+				"artisan's tools"
+			]
+		}
+	},
+	"hermit": {
+		"proficiencies": {
+			"skills": [
+				"medicine",
+				"religion"
+			],
+			"tools": [
+				"herbalism kit"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				1,
+				"any"
+			]
+		}
+	},
+	"noble": {
+		"proficiencies": {
+			"skills": [
+				"history",
+				"persuasion"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				1,
+				"any"
+			],
+			"tools": [
+				1,
+				"gaming set"
+			]
+		}
+	},
+	"outlander": {
+		"proficiencies": {
+			"skills": [
+				"athletics",
+				"survival"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				1,
+				"any"
+			],
+			"tools": [
+				1,
+				"musical instrument"
+			]
+		}
+	},
+	"sage": {
+		"proficiencies": {
+			"skills": [
+				"arcana",
+				"history"
+			]
+		},
+		"extra proficiencies": {
+			"languages": [
+				2,
+				"any"
+			]
+		}
+	},
+	"sailor": {
+		"proficiencies": {
+			"skills": [
+				"athletics",
+				"perception"
+			],
+			"tools": [
+				"navigator's tools",
+				"vehicles (water)"
+			]
+		}
+	},
+	"soldier": {
+		"proficiencies": {
+			"skills": [
+				"athletics",
+				"intimidation"
+			],
+			"tools": [
+				"vehicles (land)"
+			]
+		},
+		"extra proficiencies": {
+			"tools": [
+				1,
+				"gaming set"
+			]
+		}
+	},
+	"urchin": {
+		"proficiencies": {
+			"skills": [
+				"sleight of hand",
+				"stealth"
+			],
+			"tools": [
+				"disguise kit",
+				"thieves' tools"
+			]
+		}
+	}
+}

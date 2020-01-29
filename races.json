@@ -2,14 +2,14 @@
 	"human": {
 		"size": "medium",
 		"movement": 30,
-		"age-adult": 18,
-		"age-max": 100,
+		"adult age": 18,
+		"max age": 100,
 		"proficiencies": {
 			"languages": [
 				"common"
 			]
 		},
-		"extra-proficiencies": {
+		"extra proficiencies": {
 			"languages": [
 				1,
 				"any"
@@ -19,13 +19,13 @@
 
 
 	"dwarf": {
-		"ability-score-bonuses": {
+		"ability score bonuses": {
 			"constitution": 2
 		},
 		"size": "medium",
 		"movement": 25,
-		"age-adult": 50,
-		"age-max": 350,
+		"adult age": 50,
+		"max age": 350,
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -38,7 +38,7 @@
 				"warhammer"
 			]
 		},
-		"extra-proficiencies": {
+		"extra proficiencies": {
 			"tools": [
 				1,
 				"smith's tools",
@@ -54,12 +54,12 @@
 
 
 	"elf": {
-		"ability-score-bonuses": {
+		"ability score bonuses": {
 			"dexterity": 2
 		},
 		"size": "medium",
-		"age-adult": 100,
-		"age-max": 750,
+		"adult age": 100,
+		"max age": 750,
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -78,24 +78,24 @@
 
 
 	"half-elf": {
-		"ability-score-bonuses": {
+		"ability score bonuses": {
 			"charisma": 2
 		},
-		"extra-ability-score-bonuses": [
+		"extra ability score bonuses": [
 			2,
 			"any"
 		],
 		"size": "medium",
 		"movement": 30,
-		"age-adult": 20,
-		"age-max": 180,
+		"adult age": 20,
+		"max age": 180,
 		"proficiencies": {
 			"languages": [
 				"common",
 				"elvish"
 			]
 		},
-		"extra-proficiencies": {
+		"extra proficiencies": {
 			"languages": [
 				1,
 				"any"
@@ -111,14 +111,14 @@
 
 
 	"half-orc": {
-		"ability-score-bonuses": {
+		"ability score bonuses": {
 			"strength": 2,
 			"constitution": 1
 		},
 		"size": "medium",
 		"movement": 30,
-		"age-adult": 14,
-		"age-max": 75,
+		"adult age": 14,
+		"max age": 75,
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -135,14 +135,14 @@
 
 
 	"tiefling": {
-		"ability-score-bonuses": {
+		"ability score bonuses": {
 			"charisma": 2,
 			"intelligence": 1
 		},
 		"size": "medium",
 		"movement": 30,
-		"age-adult": 18,
-		"age-max": 100,
+		"adult age": 18,
+		"max age": 100,
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -152,5 +152,111 @@
 		"darkvision": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 		"hellish resistance": "You have resistance to fire damage.",
 		"infernal legacy": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+	},
+
+
+	"halfling": {
+		"ability score bonuses": {
+			"dexterity": 2
+		},
+		"size": "small",
+		"movement": 25,
+		"adult age": 20,
+		"max age": 150,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"halfling"
+			]
+		},
+		"lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+		"brave": "You have advantage on saving throws against being frightened.",
+		"halfling nimbleness": "You can move through the space of any creature that is of a size larger than yours."
+	},
+
+
+	"gnome": {
+		"ability score bonuses": {
+			"intelligence": 2
+		},
+		"size": "small",
+		"movement": 25,
+		"adult age": 40,
+		"max age": 480,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"gnomish"
+			]
+		},
+		"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+		"gnome cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+	},
+
+
+	"dragonborn": {
+		"ability score bonuses": {
+			"strength": 2,
+			"charisma": 1
+		},
+		"size": "medium",
+		"movement": 30,
+		"adult age": 15,
+		"max age": 80,
+		"draconic ancestry": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+		"draconic ancestry options": {
+			"black": {
+				"damage type": "acid",
+				"breath shape": "5-by-30 ft. line",
+				"saving throw": "dexterity"
+			},
+			"blue": {
+				"damage type": "lightning",
+				"breath shape": "5-by-30 ft. line",
+				"saving throw": "dexterity"
+			},
+			"brass": {
+				"damage type": "fire",
+				"breath shape": "5-by-30 ft. line",
+				"saving throw": "dexterity"
+			},
+			"bronze": {
+				"damage type": "lightning",
+				"breath shape": "5-by-30 ft. line",
+				"saving throw": "dexterity"
+			},
+			"copper": {
+				"damage type": "acid",
+				"breath shape": "5-by-30 ft. line",
+				"saving throw": "dexterity"
+			},
+			"gold": {
+				"damage type": "fire",
+				"breath shape": "15 ft. cone",
+				"saving throw": "dexterity"
+			},
+			"green": {
+				"damage type": "poison",
+				"breath shape": "15 ft. cone",
+				"saving throw": "constitution"
+			},
+			"red": {
+				"damage type": "fire",
+				"breath shape": "15 ft. cone",
+				"saving throw": "dexterity"
+			},
+			"silver": {
+				"damage type": "cold",
+				"breath shape": "15 ft. cone",
+				"saving throw": "constitution"
+			},
+			"white": {
+				"damage type": "cold",
+				"breath shape": "15 ft. cone",
+				"saving throw": "constitution"
+			}
+		},
+		"breath weapon": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\nAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+		"damage resistance": "You have resistance to the damage type associated with your draconic ancestry."
 	}
 }

@@ -9,7 +9,7 @@
 				"common"
 			]
 		},
-		"bonus-proficiencies": {
+		"extra-proficiencies": {
 			"languages": [
 				1,
 				"any"
@@ -19,7 +19,7 @@
 
 
 	"dwarf": {
-		"ability-score-bonus": {
+		"ability-score-bonuses": {
 			"constitution": 2
 		},
 		"size": "medium",
@@ -38,7 +38,7 @@
 				"warhammer"
 			]
 		},
-		"bonus-proficiencies": {
+		"extra-proficiencies": {
 			"tools": [
 				1,
 				"smith's tools",
@@ -54,7 +54,7 @@
 
 
 	"elf": {
-		"ability-score-bonus": {
+		"ability-score-bonuses": {
 			"dexterity": 2
 		},
 		"size": "medium",
@@ -73,6 +73,84 @@
 			]
 		},
 		"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-		"trance": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\nIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.",
+		"trance": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\nIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed."
+	},
+
+
+	"half-elf": {
+		"ability-score-bonuses": {
+			"charisma": 2
+		},
+		"extra-ability-score-bonuses": [
+			2,
+			"any"
+		],
+		"size": "medium",
+		"movement": 30,
+		"age-adult": 20,
+		"age-max": 180,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"elvish"
+			]
+		},
+		"extra-proficiencies": {
+			"languages": [
+				1,
+				"any"
+			],
+			"skills": [
+				2,
+				"any"
+			]
+		},
+		"darkvision": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+		"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+	},
+
+
+	"half-orc": {
+		"ability-score-bonuses": {
+			"strength": 2,
+			"constitution": 1
+		},
+		"size": "medium",
+		"movement": 30,
+		"age-adult": 14,
+		"age-max": 75,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"orc"
+			],
+			"skills": [
+				"intimidation"
+			]
+		},
+		"darkvision": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+		"relentless endurance": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
+		"savage attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+	},
+
+
+	"tiefling": {
+		"ability-score-bonuses": {
+			"charisma": 2,
+			"intelligence": 1
+		},
+		"size": "medium",
+		"movement": 30,
+		"age-adult": 18,
+		"age-max": 100,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"infernal"
+			]
+		},
+		"darkvision": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+		"hellish resistance": "You have resistance to fire damage.",
+		"infernal legacy": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
 	}
 }

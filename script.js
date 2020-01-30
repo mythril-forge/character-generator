@@ -1,5 +1,14 @@
 class Character {
 	constructor() {
+		this.abilities = {
+			'strength': 0,
+			'dexterity': 0,
+			'constitution': 0,
+			'intelligence': 0,
+			'wisdom': 0,
+			'charisma': 0,
+		}
+
 		Promise.all([
 			fetch('./races.json').then(res => res.json()),
 			fetch('./subraces.json').then(res => res.json()),
@@ -21,14 +30,19 @@ class Character {
 	}
 
 	_rollCharacter = () => {
+		// choose race
 		this.race = [...rollKeys(1, this.raceJSON)][0]
+		// choose subrace if applicable
 		if (this.race in this.subraceJSON) {
 			const subraces = this.subraceJSON[this.race]
 			this.subrace = [...rollKeys(1, subraces)][0]
 		} else {
 			this.subrace = null
 		}
-		console.log(this.subrace, this.race)
+		// choose background
+		this.background = [...rollKeys(1, this.backgroundJSON)][0]
+
+		console.log(this.subrace, this.race, this.background)
 	}
 }
 

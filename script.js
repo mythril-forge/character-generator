@@ -1,11 +1,11 @@
 class Character {
 	constructor() {
 		Promise.all([
-			fetch('./races.json'),
-			fetch('./subraces.json'),
-			fetch('./backgrounds.json'),
+			fetch('./races.json').then(res => res.json()),
+			fetch('./subraces.json').then(res => res.json()),
+			fetch('./backgrounds.json').then(res => res.json()),
 		])
-		.then(responses => responses.map(res => res.json()))
+		// .then(responses => responses.map(res => res.json()))
 		.then((data) => {
 			[ // set class attributes via deconstruction
 				this.raceJSON,

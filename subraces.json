@@ -13,16 +13,79 @@
 		"variant": {
 			"extra ability score bonuses": [
 				2,
-				"any"
+				"strength",
+				"dexterity",
+				"constitution",
+				"intelligence",
+				"wisdom",
+				"charisma"
 			],
 			"extra proficiencies": {
 				"feats": [
 					1,
-					"any"
+					"actor",
+					"alert",
+					"athlete",
+					"charger",
+					"crossbow expert",
+					"defensive duelist",
+					"dual wielder",
+					"dungeon delver",
+					"durable",
+					"elemental adept",
+					"grappler",
+					"great weapon master",
+					"healer",
+					"heavily armored",
+					"heavy armor master",
+					"inspiring leader",
+					"keen mind",
+					"lightly armored",
+					"linguist",
+					"lucky",
+					"mage slayer",
+					"magic initiate",
+					"martial adept",
+					"medium armor master",
+					"mobile",
+					"moderately armored",
+					"mounted combatant",
+					"observant",
+					"polearm master",
+					"resilient",
+					"ritual caster",
+					"savage attacker",
+					"sentinel",
+					"sharpshooter",
+					"shield master",
+					"skilled",
+					"skulker",
+					"spell sniper",
+					"tavern brawler",
+					"tough",
+					"war caster",
+					"weapon master"
 				],
 				"skills": [
 					1,
-					"any"
+					"athletics",
+					"acrobatics",
+					"sleight of hand",
+					"stealth",
+					"arcana",
+					"history",
+					"investigation",
+					"nature",
+					"religion",
+					"animal handling",
+					"insight",
+					"medicine",
+					"perception",
+					"survival",
+					"deception",
+					"intimidation",
+					"performance",
+					"persuasion"
 				]
 			}
 		}
@@ -66,7 +129,22 @@
 			"extra proficiencies": {
 				"languages": [
 					1,
-					"any"
+					"common",
+					"dwarvish",
+					"elvish",
+					"giant",
+					"gnomish",
+					"goblin",
+					"halfling",
+					"orc",
+					"abyssal",
+					"celestial",
+					"draconic",
+					"deep Speech",
+					"infernal",
+					"primordial",
+					"sylvan",
+					"undercommon"
 				]
 			},
 			"darkvision": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",

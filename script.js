@@ -16,9 +16,9 @@ class Character {
 		])
 		.then((data) => {
 			[ // set class attributes via deconstruction
-				this.raceJSON,
-				this.subraceJSON,
-				this.backgroundJSON,
+				this.raceData,
+				this.subraceData,
+				this.backgroundData,
 			] = data
 			// this is where the "true" constructor begins
 			this._rollCharacter()
@@ -31,16 +31,16 @@ class Character {
 
 	_rollCharacter = () => {
 		// choose race
-		this.race = [...rollKeys(1, this.raceJSON)][0]
+		this.race = [...rollKeys(1, this.raceData)][0]
 		// choose subrace if applicable
-		if (this.race in this.subraceJSON) {
-			const subraces = this.subraceJSON[this.race]
+		if (this.race in this.subraceData) {
+			const subraces = this.subraceData[this.race]
 			this.subrace = [...rollKeys(1, subraces)][0]
 		} else {
 			this.subrace = null
 		}
 		// choose background
-		this.background = [...rollKeys(1, this.backgroundJSON)][0]
+		this.background = [...rollKeys(1, this.backgroundData)][0]
 
 		console.log(this.subrace, this.race, this.background)
 	}

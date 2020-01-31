@@ -255,6 +255,12 @@
 		"movement": 30,
 		"adult age": 15,
 		"max age": 80,
+		"proficiencies": {
+			"languages": [
+				"common",
+				"draconic"
+			]
+		},
 		"draconic ancestry": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
 		"draconic ancestry options": {
 			"black": {

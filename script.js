@@ -1,5 +1,6 @@
 class Character {
 	constructor() {
+		/* This info represents all that is needed for a "Level 0" character. */
 		this.info = {
 			'race': null,
 			'subrace': null,
@@ -19,6 +20,7 @@ class Character {
 			},
 		}
 
+		/* The data-getting promise is currently executed whenever the class is made. */
 		Promise.all([
 			fetch('./races.json').then(res => res.json()),
 			fetch('./subraces.json').then(res => res.json()),
@@ -40,7 +42,7 @@ class Character {
 		})
 	}
 
-
+	/* Generates the basic 3 options for a new character. */
 	_rollCharacter = () => {
 		// choose race
 		this.info['race'] = [...rollKeys(1, this.raceData)][0]
@@ -63,6 +65,9 @@ class Character {
 
 
 	_parseFeatures = () => {
+		/* These functions see little use other than being helpers here. */
+		// Roll ability scores using virtual dice.
+		// Rules support the standard "4d6 drop lowest" method.
 		const _rollAbilityScores = () => {
 			const results = []
 			for (let i=0; i<6; i++) {
@@ -73,6 +78,8 @@ class Character {
 			return results
 		}
 
+		// The standard array is a pregenerated set of scores.
+		// The ordered values are scrambled.
 		const _rollStandardArray = () => {
 			const standard = [8, 10, 12, 13, 14, 15]
 			const results = []
@@ -84,6 +91,8 @@ class Character {
 			return results
 		}
 
+		// The scores on there own mean little.
+		// Mapping to self.info makes scores official!
 		const _mapAbilityScores = (scores) => {
 			const abilities = [
 				'strength',
@@ -100,7 +109,7 @@ class Character {
 			return abilityScores
 		}
 
-		// Resolve initial ability scores.
+		/* Resolve initial ability scores. */
 		// Flip a coin...
 		// Heads, roll the ability scores randomly.
 		// Tails, assign the standard array.

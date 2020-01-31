@@ -77,7 +77,7 @@ class Character {
 			const standard = [8, 10, 12, 13, 14, 15]
 			const results = []
 			for (let i=6; i>0; i--) {
-				const roll = rollDice(1,i) - 1
+				const roll = rollDice(1, i) - 1
 				results.push(standard[roll])
 				standard.splice(roll, 1)
 			}
@@ -109,7 +109,7 @@ const rollDice = (count, size, random = Math.random) => {
 const rollKeys = (count, object, random = Math.random) => {
 	const keys = Object.keys(object)
 	const results = new Set()
-	for (let i=0; i < count; i+=1) {
+	for (let i=0; i<count; i++) {
 		const roll = Math.floor(random() * keys.length)
 		results.add(keys[roll])
 		keys.splice(roll, 1)

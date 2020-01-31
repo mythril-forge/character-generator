@@ -63,6 +63,30 @@ class Character {
 
 
 	_parseFeatures = () => {
+		const _rollAbilityScores = () => {
+			const results = []
+			for (let i=0; i<6; i++) {
+				const roll = rollDice(4, 6).slice(1)
+				const score = roll.reduce((sum, die) => sum + die)
+				results.push(score)
+			}
+			return results
+		}
+
+		const _rollStandardArray = () => {
+			const standard = [8, 10, 12, 13, 14, 15]
+			const results = []
+			for (let i=6; i>0; i--) {
+				const roll = rollDice(1,i) - 1
+				results.push(standard[roll])
+				standard.splice(roll, 1)
+			}
+			return results
+		}
+
+		console.log(_rollAbilityScores())
+		console.log(_rollStandardArray())
+
 		// ability scores
 		// ability score bonuses
 		// proficiencies
@@ -74,7 +98,7 @@ class Character {
 
 const rollDice = (count, size, random = Math.random) => {
 	const results = []
-	for (let i=0; i < count; i++) {
+	for (let i=0; i<count; i++) {
 		const roll = 1 + Math.floor(random() * size)
 		results.push(roll)
 	}

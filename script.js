@@ -44,17 +44,21 @@ class Character {
 	_rollCharacter = () => {
 		// choose race
 		this.info['race'] = [...rollKeys(1, this.raceData)][0]
+		this.info[this.info['race']] = new Object()
 
 		// choose subrace if applicable
 		if (this.info['race'] in this.subraceData) {
 			const subraces = this.subraceData[this.info['race']]
 			this.info['subrace'] = [...rollKeys(1, subraces)][0]
+			this.info[this.info['subrace']] = new Object()
 		} else {
 			this.info['subrace'] = null
-		}
+			delete this.info[this.info['subrace']]
+	}
 
 		// choose background
 		this.info['background'] = [...rollKeys(1, this.backgroundData)][0]
+		this.info[this.info['background']] = new Object()
 	}
 
 

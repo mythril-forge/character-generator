@@ -14,9 +14,12 @@ class Character {
 				'charisma': 0,
 			},
 			'proficiencies': {
+				'armor': new Set(),
+				'feats': new Set(),
+				'languages': new Set(),
 				'skills': new Set(),
 				'tools': new Set(),
-				'languages': new Set(),
+				'weapons': new Set(),
 			},
 		}
 
@@ -165,14 +168,19 @@ class Character {
 				// loop through all the proficiency types
 				const entries = Object.entries(data[key])
 				for (let [type, profs] of entries) {
+					const old = this.info[key][type]
 
-					// see if the proficiency type exists already
-					if (!(type in this.info[key])) {
-						this.info[key][type] = new Set([...profs])
+					// check for duplicates between old and profs
+					let intersection = new Set(
+						[...profs].filter(prof => old.has(prof))
+					)
+
+					if (intersection.size !== 0) {
+						console.warn("you have redundant skills!")
+						console.info(intersection)
 					}
 
 					// add contents to proficiency type
-					const old = this.info[key][type]
 					this.info[key][type] = new Set([...old, ...profs])
 				}
 			}

@@ -49,12 +49,15 @@ class Character {
 	/* Generates the basic 3 options for a new character. */
 	_rollCharacter = () => {
 		// choose race
-		this.info['race'] = [...rollKeys(1, this.raceData)][0]
+		const races = Object.keys(this.raceData)
+		this.info['race'] = [...rollKeys(1, races)][0]
 		this.info[this.info['race']] = new Object()
 
 		// choose subrace if applicable
 		if (this.info['race'] in this.subraceData) {
-			const subraces = this.subraceData[this.info['race']]
+			const subraces = Object.keys(
+				this.subraceData[this.info['race']]
+			)
 			this.info['subrace'] = [...rollKeys(1, subraces)][0]
 			this.info[this.info['subrace']] = new Object()
 		} else {
@@ -63,7 +66,8 @@ class Character {
 	}
 
 		// choose background
-		this.info['background'] = [...rollKeys(1, this.backgroundData)][0]
+		const backgrounds = Object.keys(this.backgroundData)
+		this.info['background'] = [...rollKeys(1, backgrounds)][0]
 		this.info[this.info['background']] = new Object()
 	}
 
@@ -167,14 +171,13 @@ class Character {
 
 				// loop through all the proficiency types
 				const entries = Object.entries(data[key])
-				for (let [type, profs] of entries) {
+					entries.forEach(([type, profs]) => {
 					const old = this.info[key][type]
 
 					// check for duplicates between old and profs
 					let intersection = new Set(
 						[...profs].filter(prof => old.has(prof))
 					)
-
 					if (intersection.size !== 0) {
 						console.warn("you have redundant skills!")
 						console.info(intersection)
@@ -182,12 +185,46 @@ class Character {
 
 					// add contents to proficiency type
 					this.info[key][type] = new Set([...old, ...profs])
-				}
+				})
 			}
 		})
-		console.log(this.info['proficiencies'])
 
 		// extra proficiencies
+		datasets.forEach((data) => {
+			const key = 'extra proficiencies'
+
+			// check if there is any proficiencies to take
+			if (key in data) {
+				const entries = Object.entries(data[key])
+				// loop through all the proficiency types
+				entries.forEach(([type, entry]) => {
+					const old = this.info['proficiencies'][type]
+					const amount = entry[0]
+					let profs = new Set(entry.slice(1))
+
+					// remove proficiency choices that are in old
+					profs = new Set(
+						[...profs].filter(prof => !old.has(prof))
+					)
+
+					// roll for proficiency choices
+					profs = rollKeys(amount, profs)
+
+					// check for duplicates between old and profs
+					let intersection = new Set(
+						[...profs].filter(prof => old.has(prof))
+					)
+					if (intersection.size !== 0) {
+						console.warn("you have redundant skills!")
+						console.info(intersection)
+					}
+
+					// add contents to proficiency type
+					this.info['proficiencies'][type] = new Set([...old, ...profs])
+				})
+			}
+		})
+
 		// text-based features
 	}
 }
@@ -203,8 +240,8 @@ const rollDice = (count, size, random = Math.random) => {
 }
 
 
-const rollKeys = (count, object, random = Math.random) => {
-	const keys = Object.keys(object)
+const rollKeys = (count, array, random = Math.random) => {
+	const keys = [...array] // create copy
 	const results = new Set()
 	for (let i=0; i<count; i++) {
 		const roll = Math.floor(random() * keys.length)

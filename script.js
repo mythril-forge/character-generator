@@ -4,7 +4,7 @@ class Character {
 			'race': null,
 			'subrace': null,
 			'background': null,
-			'abilities': {
+			'ability scores': {
 				'strength': 0,
 				'dexterity': 0,
 				'constitution': 0,
@@ -84,10 +84,34 @@ class Character {
 			return results
 		}
 
-		console.log(_rollAbilityScores())
-		console.log(_rollStandardArray())
+		const _mapAbilityScores = (scores) => {
+			const abilities = [
+				'strength',
+				'dexterity',
+				'constitution',
+				'intelligence',
+				'wisdom',
+				'charisma',
+			]
+			const abilityScores = new Object()
+			abilities.forEach((ability, index) => {
+				abilityScores[ability] = scores[index]
+			})
+			return abilityScores
+		}
 
-		// ability scores
+		// Resolve initial ability scores.
+		// Flip a coin...
+		// Heads, roll the ability scores randomly.
+		// Tails, assign the standard array.
+		let abilityScores
+		if (rollDice(1, 2) == 2) {
+			abilityScores = _rollAbilityScores()
+		} else {
+			abilityScores = _rollStandardArray()
+		}
+		this.info['ability scores'] = _mapAbilityScores(abilityScores)
+
 		// ability score bonuses
 		// proficiencies
 		// extra proficiencies
@@ -97,7 +121,7 @@ class Character {
 
 
 const rollDice = (count, size, random = Math.random) => {
-	const results = []
+	const results = new Array()
 	for (let i=0; i<count; i++) {
 		const roll = 1 + Math.floor(random() * size)
 		results.push(roll)

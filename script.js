@@ -78,7 +78,7 @@ const rollDice = (count, size, random = Math.random) => {
 		const roll = 1 + Math.floor(random() * size)
 		results.push(roll)
 	}
-	return results
+	return results.sort()
 }
 
 

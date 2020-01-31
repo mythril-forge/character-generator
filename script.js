@@ -128,15 +128,18 @@ class Character {
 		const race = this.info['race']
 		const subrace = this.info['subrace']
 		const background = this.info['background']
-		{ // block scoped to forget unneeded constants
+
+		{ // Block scoped to forget unneeded constants.
 			const raceData = this.raceData[race]
 			const backgroundData = this.backgroundData[background]
 			let subraceData
+			// Sometimes there exists no subrace for a race.
 			if (race in this.subraceData) {
 				subraceData = this.subraceData[race][subrace]
 			} else {
 				subraceData = new Object()
 			}
+			// "datasets" is all we needed out of this block.
 			datasets = [raceData, subraceData, backgroundData]
 		}
 
@@ -152,6 +155,30 @@ class Character {
 		})
 
 		// proficiencies
+		datasets.forEach((data) => {
+			// shorten this all-to-needed phrase
+			const key = 'proficiencies'
+
+			// check if there is any proficiencies to take
+			if (key in data) {
+
+				// loop through all the proficiency types
+				const entries = Object.entries(data[key])
+				for (let [type, profs] of entries) {
+
+					// see if the proficiency type exists already
+					if (!(type in this.info[key])) {
+						this.info[key][type] = new Set([...profs])
+					}
+
+					// add contents to proficiency type
+					const old = this.info[key][type]
+					this.info[key][type] = new Set([...old, ...profs])
+				}
+			}
+		})
+		console.log(this.info['proficiencies'])
+
 		// extra proficiencies
 		// text-based features
 	}

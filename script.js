@@ -21,6 +21,7 @@ class Character {
 				'tools': new Set(),
 				'weapons': new Set(),
 			},
+			'features': new Object(),
 		}
 
 		/* The data-getting promise is currently executed whenever the class is made. */
@@ -161,6 +162,9 @@ class Character {
 			}
 		})
 
+		// extra ability score bonuses
+		// TODO
+
 		// proficiencies
 		datasets.forEach((data) => {
 			// shorten this all-to-needed phrase
@@ -225,7 +229,31 @@ class Character {
 			}
 		})
 
+		// draconic ancestory
+		// TODO
+
 		// text-based features
+		const invalidFeatures = new Set([
+			'size',
+			'movement',
+			'adult age',
+			'max age',
+			'ability score bonuses',
+			'extra ability score bonuses',
+			'proficiencies',
+			'extra proficiencies',
+			'draconic ancestry options',
+		])
+		datasets.forEach((data) => {
+			// loop through all features
+			const entries = Object.entries(data)
+			// loop through all the proficiency types
+			entries.forEach(([feature, entry]) => {
+				if (!(invalidFeatures.has(feature))) {
+					this.info['features'][feature] = entry
+				}
+			})
+		})
 	}
 }
 

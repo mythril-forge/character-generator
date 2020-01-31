@@ -33,6 +33,7 @@ class Character {
 				this.backgroundData,
 			] = data
 			// this is where the "true" constructor begins
+			this._rollForStats()
 			this._rollCharacter()
 			this._parseFeatures()
 		})
@@ -63,8 +64,8 @@ class Character {
 		this.info[this.info['background']] = new Object()
 	}
 
-
-	_parseFeatures = () => {
+	/* Rolling for stats is always fun, including in JavaScript :) */
+	_rollForStats = () => {
 		/* These functions see little use other than being helpers here. */
 		// Roll ability scores using virtual dice.
 		// Rules support the standard "4d6 drop lowest" method.
@@ -120,8 +121,36 @@ class Character {
 			abilityScores = _rollStandardArray()
 		}
 		this.info['ability scores'] = _mapAbilityScores(abilityScores)
+	}
+
+	_parseFeatures = () => {
+		let datasets
+		const race = this.info['race']
+		const subrace = this.info['subrace']
+		const background = this.info['background']
+		{ // block scoped to forget unneeded constants
+			const raceData = this.raceData[race]
+			const backgroundData = this.backgroundData[background]
+			let subraceData
+			if (race in this.subraceData) {
+				subraceData = this.subraceData[race][subrace]
+			} else {
+				subraceData = new Object()
+			}
+			datasets = [raceData, subraceData, backgroundData]
+		}
 
 		// ability score bonuses
+		datasets.forEach((data) => {
+			const key = 'ability score bonuses'
+			if (key in data) {
+				const entries = Object.entries(data[key])
+				for (const [ability, bonus] of entries) {
+					this.info['ability scores'][ability] += bonus
+				}
+			}
+		})
+
 		// proficiencies
 		// extra proficiencies
 		// text-based features

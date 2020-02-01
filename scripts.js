@@ -35,18 +35,41 @@ const displayInfo = () => {
 		// generate ability score text
 		let bonusText = Math.floor((score - 10) / 2)
 		if (bonusText > 0) {
-			bonusText = '+' + bonusText.toString()
+			bonusText = `+${bonusText.toString()}`
 		} else if (bonusText < 0) {
-			bonusText = '−' + Math.abs(bonusText).toString()
+			bonusText = `−${Math.abs(bonusText).toString()}`
 		} else {
-			bonusText = '±' + bonusText.toString()
+			bonusText = `±${bonusText.toString()}`
 		}
-		const abilityText = score.toString() + ' (' + bonusText + ')'
+		const abilityText = `${score.toString()} (${bonusText})`
 		// apply to elements
-		const classKey = ability + '-score-info'
+		const classKey = `${ability}-score-info`
 		const abilityEls = document.getElementsByClassName(classKey)
 		for (const el of abilityEls) {
 			el.textContent = abilityText
+		}
+	}
+
+	/* PROFICIENCIES */
+	// identify key info
+	let proficiencyInfo = UserChar.info['proficiencies']
+	proficiencyInfo = Object.entries(proficiencyInfo)
+	for (const [category, categoryInfo] of proficiencyInfo) {
+		// generate proficiency text
+		let proficiencyText = ''
+		categoryInfo.forEach((prof) => {
+			console.log(prof)
+			if (proficiencyText === '') {
+				proficiencyText = prof
+			} else {
+				proficiencyText += `, ${prof}`
+			}
+		})
+		// apply to elements
+		const classKey =  `proficient-${category}-info`
+		const proficiencyEls = document.getElementsByClassName(classKey)
+		for (const el of proficiencyEls) {
+			el.textContent = proficiencyText
 		}
 	}
 }

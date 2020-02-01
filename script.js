@@ -52,7 +52,6 @@ class Character {
 		// choose race
 		const races = Object.keys(this.raceData)
 		this.info['race'] = [...rollKeys(1, races)][0]
-		this.info[this.info['race']] = new Object()
 
 		// choose subrace if applicable
 		if (this.info['race'] in this.subraceData) {
@@ -60,7 +59,6 @@ class Character {
 				this.subraceData[this.info['race']]
 			)
 			this.info['subrace'] = [...rollKeys(1, subraces)][0]
-			this.info[this.info['subrace']] = new Object()
 		} else {
 			this.info['subrace'] = null
 			delete this.info[this.info['subrace']]
@@ -69,7 +67,6 @@ class Character {
 		// choose background
 		const backgrounds = Object.keys(this.backgroundData)
 		this.info['background'] = [...rollKeys(1, backgrounds)][0]
-		this.info[this.info['background']] = new Object()
 	}
 
 	/* Rolling for stats is always fun, including in JavaScript :) */

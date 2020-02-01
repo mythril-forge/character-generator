@@ -163,11 +163,26 @@ class Character {
 		})
 
 		// extra ability score bonuses
-		// TODO
+		datasets.forEach((data) => {
+			// shorten this all-to-needed phrase
+			const key = 'extra ability score bonuses'
+			if (key in data) {
+				const amount = data[key][0]
+				let bonuses = new Set(data[key].slice(1))
+
+				// roll for ability score bonuses
+				bonuses = rollKeys(amount, bonuses)
+
+				// add bonuses to ability scores
+				bonuses.forEach((bonus) => {
+					this.info['ability scores'][bonus] += 1
+				})
+			}
+		})
 
 		// proficiencies
 		datasets.forEach((data) => {
-			// shorten this all-to-needed phrase
+			// shorten this all-too-needed phrase
 			const key = 'proficiencies'
 
 			// check if there is any proficiencies to take

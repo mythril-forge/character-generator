@@ -12,8 +12,6 @@ class Character {
 				this.subraceData,
 				this.backgroundData,
 			] = data
-			// this is where the "true" constructor begins
-			this.generate()
 		})
 		.catch((error) => {
 			console.error("Oh no! Something terrible happened.")

@@ -102,8 +102,7 @@
 			"dexterity",
 			"constitution",
 			"intelligence",
-			"wisdom",
-			"charisma"
+			"wisdom"
 		],
 		"size": "medium",
 		"movement": 30,

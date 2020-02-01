@@ -1,5 +1,27 @@
 class Character {
 	constructor() {
+		/* The data-getting promise is currently executed whenever the class is made. */
+		Promise.all([
+			fetch('./races.json').then(res => res.json()),
+			fetch('./subraces.json').then(res => res.json()),
+			fetch('./backgrounds.json').then(res => res.json()),
+		])
+		.then((data) => {
+			[ // set class attributes via deconstruction
+				this.raceData,
+				this.subraceData,
+				this.backgroundData,
+			] = data
+			// this is where the "true" constructor begins
+			this.generate()
+		})
+		.catch((error) => {
+			console.error("Oh no! Something terrible happened.")
+			new Error(error.message)
+		})
+	}
+
+	generate = () => {
 		/* This info represents all that is needed for a "Level 0" character. */
 		this.info = {
 			'race': null,
@@ -24,27 +46,10 @@ class Character {
 			'features': new Object(),
 		}
 
-		/* The data-getting promise is currently executed whenever the class is made. */
-		Promise.all([
-			fetch('./races.json').then(res => res.json()),
-			fetch('./subraces.json').then(res => res.json()),
-			fetch('./backgrounds.json').then(res => res.json()),
-		])
-		.then((data) => {
-			[ // set class attributes via deconstruction
-				this.raceData,
-				this.subraceData,
-				this.backgroundData,
-			] = data
-			// this is where the "true" constructor begins
-			this._rollForStats()
-			this._rollCharacter()
-			this._parseFeatures()
-		})
-		.catch((error) => {
-			console.error("Oh no! Something terrible happened.")
-			new Error(error.message)
-		})
+		// now call helper functions
+		this._rollForStats()
+		this._rollCharacter()
+		this._parseFeatures()
 	}
 
 	/* Generates the basic 3 options for a new character. */
@@ -290,6 +295,3 @@ const rollKeys = (count, array, random = Math.random) => {
 	}
 	return results
 }
-
-
-const Vlanljorg = new Character

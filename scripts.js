@@ -58,7 +58,6 @@ const displayInfo = () => {
 		// generate proficiency text
 		let proficiencyText = ''
 		categoryInfo.forEach((prof) => {
-			console.log(prof)
 			if (proficiencyText === '') {
 				proficiencyText = prof
 			} else {

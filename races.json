@@ -61,10 +61,12 @@
 				"mason's tools"
 			]
 		},
-		"speed": "Your speed is not reduced by wearing heavy armor.",
-		"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-		"dwarven resilience": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
-		"stonecunning": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+		"features": {
+			"speed": "Your speed is not reduced by wearing heavy armor.",
+			"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"dwarven resilience": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+			"stonecunning": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+		}
 	},
 
 
@@ -87,8 +89,10 @@
 				"shortsword"
 			]
 		},
-		"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
-		"trance": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\n\tIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed."
+		"features": {
+			"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+			"trance": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\n\tIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed."
+		}
 	},
 
 
@@ -156,8 +160,10 @@
 				"persuasion"
 			]
 		},
-		"darkvision": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-		"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+		"features": {
+			"darkvision": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+		}
 	},
 
 
@@ -179,9 +185,11 @@
 				"intimidation"
 			]
 		},
-		"darkvision": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-		"relentless endurance": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
-		"savage attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+		"features": {
+			"darkvision": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"relentless endurance": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
+			"savage attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+		}
 	},
 
 
@@ -200,9 +208,11 @@
 				"infernal"
 			]
 		},
-		"darkvision": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-		"hellish resistance": "You have resistance to fire damage.",
-		"infernal legacy": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+		"features": {
+			"darkvision": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"hellish resistance": "You have resistance to fire damage.",
+			"infernal legacy": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+		}
 	},
 
 
@@ -220,9 +230,11 @@
 				"halfling"
 			]
 		},
-		"lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
-		"brave": "You have advantage on saving throws against being frightened.",
-		"halfling nimbleness": "You can move through the space of any creature that is of a size larger than yours."
+		"features": {
+			"lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+			"brave": "You have advantage on saving throws against being frightened.",
+			"halfling nimbleness": "You can move through the space of any creature that is of a size larger than yours."
+		}
 	},
 
 
@@ -240,8 +252,10 @@
 				"gnomish"
 			]
 		},
-		"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-		"gnome cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+		"features": {
+			"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+			"gnome cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+		}
 	},
 
 
@@ -260,60 +274,10 @@
 				"draconic"
 			]
 		},
-		"draconic ancestry": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
-		"draconic ancestry options": {
-			"black": {
-				"damage type": "acid",
-				"breath shape": "5-by-30 ft. line",
-				"saving throw": "dexterity"
-			},
-			"blue": {
-				"damage type": "lightning",
-				"breath shape": "5-by-30 ft. line",
-				"saving throw": "dexterity"
-			},
-			"brass": {
-				"damage type": "fire",
-				"breath shape": "5-by-30 ft. line",
-				"saving throw": "dexterity"
-			},
-			"bronze": {
-				"damage type": "lightning",
-				"breath shape": "5-by-30 ft. line",
-				"saving throw": "dexterity"
-			},
-			"copper": {
-				"damage type": "acid",
-				"breath shape": "5-by-30 ft. line",
-				"saving throw": "dexterity"
-			},
-			"gold": {
-				"damage type": "fire",
-				"breath shape": "15 ft. cone",
-				"saving throw": "dexterity"
-			},
-			"green": {
-				"damage type": "poison",
-				"breath shape": "15 ft. cone",
-				"saving throw": "constitution"
-			},
-			"red": {
-				"damage type": "fire",
-				"breath shape": "15 ft. cone",
-				"saving throw": "dexterity"
-			},
-			"silver": {
-				"damage type": "cold",
-				"breath shape": "15 ft. cone",
-				"saving throw": "constitution"
-			},
-			"white": {
-				"damage type": "cold",
-				"breath shape": "15 ft. cone",
-				"saving throw": "constitution"
-			}
-		},
-		"breath weapon": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
-		"damage resistance": "You have resistance to the damage type associated with your draconic ancestry."
+		"features": {
+			"draconic ancestry": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+			"breath weapon": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+			"damage resistance": "You have resistance to the damage type associated with your draconic ancestry."
+		}
 	}
 }

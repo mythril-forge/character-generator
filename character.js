@@ -244,29 +244,20 @@ class Character {
 			}
 		})
 
-		// draconic ancestory
-		// TODO
-
 		// text-based features
-		const invalidFeatures = new Set([
-			'size',
-			'movement',
-			'adult age',
-			'max age',
-			'ability score bonuses',
-			'extra ability score bonuses',
-			'proficiencies',
-			'extra proficiencies',
-			'draconic ancestry options',
-		])
 		datasets.forEach((data) => {
-			// loop through all features
-			const entries = Object.entries(data)
+			const key = 'features'
+			console.warn("CHECKING KEY")
+			console.log(data[key])
+			let entries
+			if (data[key] == undefined) {
+				entries = new Array()
+			} else {
+				entries = Object.entries(data[key])
+			}
 			// loop through all the proficiency types
-			entries.forEach(([feature, entry]) => {
-				if (!(invalidFeatures.has(feature))) {
-					this.info['features'][feature] = entry
-				}
+			entries.forEach(([feature, description]) => {
+				this.info['features'][feature] = description
 			})
 		})
 	}

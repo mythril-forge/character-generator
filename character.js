@@ -247,12 +247,9 @@ class Character {
 		// text-based features
 		datasets.forEach((data) => {
 			const key = 'features'
-			console.warn("CHECKING KEY")
-			console.log(data[key])
-			let entries
-			if (data[key] == undefined) {
-				entries = new Array()
-			} else {
+			//  ensure entries is a loopable item
+			let entries = new Array()
+			if (data[key] != undefined) {
 				entries = Object.entries(data[key])
 			}
 			// loop through all the proficiency types

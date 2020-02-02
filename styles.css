@@ -3,3 +3,9 @@ html, body {
 	color: #dddddd;
 	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+#features-container h1,
+#features-container h2,
+#features-container h3 {
+	text-transform: capitalize
+}

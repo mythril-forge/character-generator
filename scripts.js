@@ -71,4 +71,25 @@ const displayInfo = () => {
 			el.textContent = proficiencyText
 		}
 	}
+
+	/* FEATURES */
+	// identify key info
+	let featureInfo = UserChar.info['features']
+	featureInfo = Object.entries(featureInfo)
+	const featureContainerEl = document.getElementById('features-container')
+	// clear all container children
+	while (featureContainerEl.firstChild) {
+		featureContainerEl.removeChild(featureContainerEl.firstChild)
+	}
+	// loop through each feature entry
+	for (const [featureText, descriptionText] of featureInfo) {
+		// create new feature & feature description elements
+		const featureEl = document.createElement('h3')
+		const descriptionEl = document.createElement('p')
+		// apply text to new elements
+		featureEl.textContent = featureText
+		descriptionEl.textContent = descriptionText
+		featureContainerEl.appendChild(featureEl)
+		featureContainerEl.appendChild(descriptionEl)
+	}
 }

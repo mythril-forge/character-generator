@@ -92,4 +92,21 @@ const displayInfo = () => {
 		featureContainerEl.appendChild(featureEl)
 		featureContainerEl.appendChild(descriptionEl)
 	}
+
+	/* STARTING EQUIPMENT */
+	// identify key info
+	let equipmentInfo = UserChar.info['equipment']
+	const equipmentContainerEl = document.getElementById('equipment-container')
+	// clear all equipment children
+	while (equipmentContainerEl.firstChild) {
+		equipmentContainerEl.removeChild(equipmentContainerEl.firstChild)
+	}
+	// loop through each equipment entry
+	equipmentInfo.forEach((itemText) => {
+		const itemEl = document.createElement('li')
+		// apply text to neew element
+		itemEl.textContent = itemText
+		console.log(itemText)
+		equipmentContainerEl.appendChild(itemEl)
+	})
 }

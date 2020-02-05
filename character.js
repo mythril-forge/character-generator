@@ -42,6 +42,7 @@ class Character {
 				'weapons': new Set(),
 			},
 			'features': new Object(),
+			'equipment': new Array(),
 		}
 
 		// now call helper functions
@@ -244,10 +245,27 @@ class Character {
 			}
 		})
 
+		// equipment
+		datasets.forEach((data) => {
+			const key = 'equipment'
+			// ensure entries is a loopable item
+			let entries = new Array()
+			if (data[key] != undefined) {
+				entries = data[key]
+			}
+			// loop through each equipment entry.
+			// an entry is an array with one or more items.
+			// one of those items should be randomly selected.
+			entries.forEach((entry) => {
+				const item = [...rollKeys(1, entry)][0]
+				this.info['equipment'].push(item)
+			})
+		})
+
 		// text-based features
 		datasets.forEach((data) => {
 			const key = 'features'
-			//  ensure entries is a loopable item
+			// ensure entries is a loopable item
 			let entries = new Array()
 			if (data[key] != undefined) {
 				entries = Object.entries(data[key])

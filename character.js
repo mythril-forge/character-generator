@@ -34,7 +34,7 @@ class Character {
 				'charisma': 0,
 			},
 			'proficiencies': {
-				'armor': new Set(),
+				'armors': new Set(),
 				'feats': new Set(),
 				'languages': new Set(),
 				'skills': new Set(),

@@ -106,7 +106,6 @@ const displayInfo = () => {
 		const itemEl = document.createElement('li')
 		// apply text to neew element
 		itemEl.textContent = itemText
-		console.log(itemText)
 		equipmentContainerEl.appendChild(itemEl)
 	})
 }

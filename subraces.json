@@ -106,7 +106,7 @@
 				"strength": 2
 			},
 			"proficiencies": {
-				"armor": [
+				"armors": [
 					"light",
 					"medium"
 				]

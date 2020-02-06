@@ -241,72 +241,72 @@
 	"dragonborn": {
 		"black": {
 			"features": {
-				"breath weapon damage type": "acid",
-				"breath weapon shape": "5-by-30 ft. line",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to black dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 5-by-30-foot line.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 acid damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to acid damage."
 			}
 		},
 		"blue": {
 			"features": {
-				"breath weapon damage type": "lightning",
-				"breath weapon shape": "5-by-30 ft. line",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to blue dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 5-by-30-foot line.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 lightning damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to lightning damage."
 			}
 		},
 		"brass": {
 			"features": {
-				"breath weapon damage type": "fire",
-				"breath weapon shape": "5-by-30 ft. line",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to brass dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 5-by-30-foot line.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to fire damage."
 			}
 		},
 		"bronze": {
 			"features": {
-				"breath weapon damage type": "lightning",
-				"breath weapon shape": "5-by-30 ft. line",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to bronze dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 5-by-30-foot line.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 lightning damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to lightning damage."
 			}
 		},
 		"copper": {
 			"features": {
-				"breath weapon damage type": "acid",
-				"breath weapon shape": "5-by-30 ft. line",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to copper dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 5-by-30-foot line.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 acid damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to acid damage."
 			}
 		},
 		"gold": {
 			"features": {
-				"breath weapon damage type": "fire",
-				"breath weapon shape": "15 ft. cone",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to gold dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 15-foot cone.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to fire damage."
 			}
 		},
 		"green": {
 			"features": {
-				"breath weapon damage type": "poison",
-				"breath weapon shape": "15 ft. cone",
-				"breath weapon saving throw": "constitution"
+				"draconic ancestry": "You have an ancestry tracing back to green dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 15-foot cone.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 poison damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to poison damage."
 			}
 		},
 		"red": {
 			"features": {
-				"breath weapon damage type": "fire",
-				"breath weapon shape": "15 ft. cone",
-				"breath weapon saving throw": "dexterity"
+				"draconic ancestry": "You have an ancestry tracing back to red dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 15-foot cone.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to fire damage."
 			}
 		},
 		"silver": {
 			"features": {
-				"breath weapon damage type": "cold",
-				"breath weapon shape": "15 ft. cone",
-				"breath weapon saving throw": "constitution"
+				"draconic ancestry": "You have an ancestry tracing back to silver dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 15-foot cone.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 cold damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to cold damage."
 			}
 		},
 		"white": {
 			"features": {
-				"breath weapon damage type": "cold",
-				"breath weapon shape": "15 ft. cone",
-				"breath weapon saving throw": "constitution"
+				"draconic ancestry": "You have an ancestry tracing back to white dragons. Your breath weapon and damage resistance are determined by this ancestry.",
+				"breath weapon": "You can use your action to exhale destructive energy, which blasts out from you in a 15-foot cone.\n\tWhen you use your breath weapon, each creature in the area of the exhalation must make a constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 cold damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\tAfter you use your breath weapon, you can't use it again until you complete a short or long rest.",
+				"damage resistance": "You have resistance to cold damage."
 			}
 		}
 	}

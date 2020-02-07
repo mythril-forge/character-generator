@@ -47,10 +47,10 @@
 				"dwarvish"
 			],
 			"weapons": [
-				"battleaxe",
-				"handaxe",
-				"light hammer",
-				"warhammer"
+				"battleaxes",
+				"handaxes",
+				"light hammers",
+				"warhammers"
 			]
 		},
 		"extra proficiencies": {
@@ -86,7 +86,7 @@
 				"perception"
 			],
 			"weapons": [
-				"shortsword"
+				"shortswords"
 			]
 		},
 		"features": {

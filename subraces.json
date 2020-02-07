@@ -81,9 +81,9 @@
 			"movement": 30,
 			"proficiencies": {
 				"weapons": [
-					"longsword",
-					"shortbow",
-					"longbow"
+					"longswords",
+					"shortbows",
+					"longbows"
 				]
 			},
 			"extra proficiencies": {
@@ -119,9 +119,9 @@
 			"movement": 35,
 			"proficiencies": {
 				"weapons": [
-					"longsword",
-					"shortbow",
-					"longbow"
+					"longswords",
+					"shortbows",
+					"longbows"
 				]
 			},
 			"features": {

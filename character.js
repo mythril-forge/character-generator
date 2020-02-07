@@ -43,6 +43,7 @@ class Character {
 				'tools': new Set(),
 				'weapons': new Set(),
 			},
+			'characteristics': new Object(),
 			'features': new Object(),
 			'equipment': new Array(),
 		}
@@ -286,6 +287,23 @@ class Character {
 			entries.forEach(([feature, description]) => {
 				this.info['features'][feature] = description
 			})
+		})
+
+		// characteristics
+		datasets.forEach((data) => {
+			const key = 'characteristics'
+			// ensure entries is a loopable item
+			let entries = new Array()
+			if (data[key] != undefined) {
+				entries = Object.entries(data[key])
+			}
+			// loop through all the proficiency types
+			entries.forEach(([characteristic, info]) => {
+				// determine description from random choice
+				const description = [...rollKeys(1, info)][0]
+				this.info['characteristics'][characteristic] = description
+			})
+			console.log(this.info['characteristics'])
 		})
 	}
 }

@@ -136,4 +136,26 @@ const displayInfo = () => {
 		itemEl.textContent = itemText
 		equipmentContainerEl.appendChild(itemEl)
 	})
+
+	/* CHARACTERISTICS */
+	// identify key info
+	let characteristicInfo = UserChar.info['characteristics']
+	characteristicInfo = Object.entries(characteristicInfo)
+	const characteristicContainerEl = document.getElementById('characteristics-container')
+	// clear all container children
+	while (characteristicContainerEl.firstChild) {
+		characteristicContainerEl.removeChild(characteristicContainerEl.firstChild)
+	}
+	// loop through each characteristic entry
+	for (const [characteristicText, descriptionText] of characteristicInfo) {
+		// create new characteristic & characteristic description elements
+		const characteristicEl = document.createElement('h3')
+		const descriptionEl = document.createElement('p')
+		// apply text & content to elements
+		characteristicEl.textContent = characteristicText
+		descriptionEl.textContent = descriptionText
+		characteristicContainerEl.appendChild(characteristicEl)
+		characteristicContainerEl.appendChild(descriptionEl)
+	}
+
 }

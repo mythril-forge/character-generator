@@ -50,6 +50,27 @@ const displayInfo = () => {
 		}
 	}
 
+	/* OTHER MECHANICS */
+	// creature size
+	const sizeText = UserChar.info['size']
+	const sizeEls = document.getElementsByClassName('size-info')
+	for (const el of sizeEls) {
+		el.textContent = sizeText
+	}
+	// movement speed
+	const movementText = UserChar.info['movement']
+	const movementEls = document.getElementsByClassName('movement-info')
+	for (const el of movementEls) {
+		el.textContent = `${movementText} feet`
+	}
+	// armor class
+	let armorText = UserChar.info['ability scores']['dexterity']
+	armorText = 10 + Math.floor((armorText - 10) / 2)
+	const armorEl = document.getElementsByClassName('armor-info')
+	for (const el of armorEl) {
+		el.textContent = `${armorText} AC`
+	}
+
 	/* PROFICIENCIES */
 	// identify key info
 	let proficiencyInfo = UserChar.info['proficiencies']

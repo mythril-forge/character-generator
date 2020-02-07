@@ -25,6 +25,8 @@ class Character {
 			'race': null,
 			'subrace': null,
 			'background': null,
+			'size': null,
+			'movement': null,
 			'ability scores': {
 				'strength': 0,
 				'dexterity': 0,
@@ -260,6 +262,16 @@ class Character {
 				const item = [...rollKeys(1, entry)][0]
 				this.info['equipment'].push(item)
 			})
+		})
+
+		// miscellaneous character details
+		datasets.forEach((data) => {
+			if (data['size']) {
+				this.info['size'] = data['size']
+			}
+			if (data['movement']) {
+				this.info['movement'] = data['movement']
+			}
 		})
 
 		// text-based features

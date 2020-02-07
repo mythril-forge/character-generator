@@ -4,31 +4,37 @@ html, body {
 	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#features-container h1,
-#features-container h2,
-#features-container h3 {
-	text-transform: capitalize
-}
-
 h1 {
 	color: #FFF;
 	font-size: 4rem;
+	margin: 0rem;
+	text-transform: capitalize;
 }
 
 h2 {
 	color: #DDD;
 	font-size: 2rem;
-	margin-bottom: 0rem;
+	text-transform: capitalize;
+	margin: 0rem;
 }
 
 h3 {
 	color: #BBB;
 	font-size: 1.25rem;
-	margin-bottom: 0rem;
+	text-transform: capitalize;
+	margin: 0rem;
 }
 
-ul, p {
+p {
 	margin-top: 0rem;
+}
+
+ul  {
+	margin: 0rem;
+}
+
+li:last-child {
+	margin-bottom: 1em;
 }
 
 button#generate {

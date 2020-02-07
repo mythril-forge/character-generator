@@ -54,21 +54,28 @@ const displayInfo = () => {
 	// identify key info
 	let proficiencyInfo = UserChar.info['proficiencies']
 	proficiencyInfo = Object.entries(proficiencyInfo)
-	for (const [category, categoryInfo] of proficiencyInfo) {
-		const classKey = `proficient-${category}-container`
-		const proficiencyContainerEl = document.getElementById(classKey)
-		// clear all container children
-		while (proficiencyContainerEl.firstChild) {
-			proficiencyContainerEl.removeChild(proficiencyContainerEl.firstChild)
-		}
-
-		// loop through each equipment entry
-		categoryInfo.forEach((proficiencyText) => {
-			// create new proficiency elements
+	.filter((data) => {
+		return data[1].size != 0
+	})
+	const proficiencyContainerEl = document.getElementById('proficiency-container')
+	// clear all container children
+	while (proficiencyContainerEl.firstChild) {
+		proficiencyContainerEl.removeChild(proficiencyContainerEl.firstChild)
+	}
+	// loop through each proficiency category
+	for (const [categoryText, proficiencies] of proficiencyInfo) {
+		// create new category heading & prof-list elements
+		const categoryEl = document.createElement('h3')
+		const proficiencyListEl = document.createElement('ul')
+		// apply text & content to elements
+		categoryEl.textContent = categoryText
+		proficiencyContainerEl.appendChild(categoryEl)
+		proficiencyContainerEl.appendChild(proficiencyListEl)
+		// repeat with iterable proficiency lists
+		proficiencies.forEach((proficiencyText) => {
 			const proficiencyEl = document.createElement('li')
-			// apply text to new element
 			proficiencyEl.textContent = proficiencyText
-			proficiencyContainerEl.appendChild(proficiencyEl)
+			proficiencyListEl.appendChild(proficiencyEl)
 		})
 	}
 
@@ -86,7 +93,7 @@ const displayInfo = () => {
 		// create new feature & feature description elements
 		const featureEl = document.createElement('h3')
 		const descriptionEl = document.createElement('p')
-		// apply text to new elements
+		// apply text & content to elements
 		featureEl.textContent = featureText
 		descriptionEl.textContent = descriptionText
 		featureContainerEl.appendChild(featureEl)

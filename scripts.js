@@ -55,21 +55,21 @@ const displayInfo = () => {
 	let proficiencyInfo = UserChar.info['proficiencies']
 	proficiencyInfo = Object.entries(proficiencyInfo)
 	for (const [category, categoryInfo] of proficiencyInfo) {
-		// generate proficiency text
-		let proficiencyText = ''
-		categoryInfo.forEach((prof) => {
-			if (proficiencyText === '') {
-				proficiencyText = prof
-			} else {
-				proficiencyText += `, ${prof}`
-			}
-		})
-		// apply to elements
-		const classKey =  `proficient-${category}-info`
-		const proficiencyEls = document.getElementsByClassName(classKey)
-		for (const el of proficiencyEls) {
-			el.textContent = proficiencyText
+		const classKey = `proficient-${category}-container`
+		const proficiencyContainerEl = document.getElementById(classKey)
+		// clear all container children
+		while (proficiencyContainerEl.firstChild) {
+			proficiencyContainerEl.removeChild(proficiencyContainerEl.firstChild)
 		}
+
+		// loop through each equipment entry
+		categoryInfo.forEach((proficiencyText) => {
+			// create new proficiency elements
+			const proficiencyEl = document.createElement('li')
+			// apply text to new element
+			proficiencyEl.textContent = proficiencyText
+			proficiencyContainerEl.appendChild(proficiencyEl)
+		})
 	}
 
 	/* FEATURES */
@@ -104,7 +104,7 @@ const displayInfo = () => {
 	// loop through each equipment entry
 	equipmentInfo.forEach((itemText) => {
 		const itemEl = document.createElement('li')
-		// apply text to neew element
+		// apply text to new element
 		itemEl.textContent = itemText
 		equipmentContainerEl.appendChild(itemEl)
 	})

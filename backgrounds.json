@@ -268,7 +268,7 @@
 			"routine": [
 				"Actor",
 				"Dancer",
-				"Fire-eater",
+				"Fire-Eater",
 				"Jester",
 				"Juggler",
 				"Instrumentalist",
@@ -467,26 +467,26 @@
 		"characteristics": {
 			"summary": ["Guild artisans are among the most ordinary people in the world—until they set down their tools and take up an adventuring career. They understand the value of hard work and the importance of community, but they're vulnerable to sins of greed and covetousness."],
 			"guild business": [
-				"Alchemists and apothecaries",
-				"Armorers, locksmiths, and finesmiths",
-				"Brewers, distillers, and vintners",
-				"Calligraphers, scribes, and scriveners",
-				"Carpenters, roofers, and plasterers",
-				"Cartographers, surveyors, and chart-makers",
-				"Cobblers and shoemakers",
-				"Cooks and bakers",
-				"Glassblowers and glaziers",
-				"Jewelers and gemcutters",
-				"Leatherworkers, skinners, and tanners",
-				"Masons and stonecutters",
-				"Painters, limners, and sign-makers",
-				"Potters and tile-makers",
-				"Shipwrights and sail-makers",
-				"Smiths and metal-forgers",
-				"Tinkers, pewterers, and casters",
-				"Wagon-makers and wheelwrights",
-				"Weavers and dyers",
-				"Woodcarvers, coopers, and bowyers"
+				"Alchemists and Apothecaries",
+				"Armorers, Locksmiths, and Finesmiths",
+				"Brewers, Distillers, and Vintners",
+				"Calligraphers, Scribes, and Scriveners",
+				"Carpenters, Roofers, and Plasterers",
+				"Cartographers, Surveyors, and Chart-Makers",
+				"Cobblers and Shoemakers",
+				"Cooks and Bakers",
+				"Glassblowers and Glaziers",
+				"Jewelers and Gemcutters",
+				"Leatherworkers, Skinners, and Tanners",
+				"Masons and Stonecutters",
+				"Painters, Limners, and Sign-Makers",
+				"Potters and Tile-Makers",
+				"Shipwrights and Sail-Makers",
+				"Smiths and Metal-Forgers",
+				"Tinkers, Pewterers, and Casters",
+				"Wagon-Makers and Wheelwrights",
+				"Weavers and Dyers",
+				"Woodcarvers, Coopers, and Bowyers"
 			],
 			"personality traits": [
 				"I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.",
@@ -755,12 +755,12 @@
 				"Trapper",
 				"Homesteader",
 				"Guide",
-				"Exile or outcast",
-				"Bounty hunter",
+				"Exile or Outcast",
+				"Bounty Hunter",
 				"Pilgrim",
-				"Tribal nomad",
-				"Hunter-gatherer",
-				"Tribal marauder"
+				"Tribal Nomad",
+				"Hunter-Gatherer",
+				"Tribal Marauder"
 			],
 			"personality traits": [
 				"I'm driven by a wanderlust that led me away from home",
@@ -843,11 +843,11 @@
 			"field of study": [
 				"Alchemist",
 				"Astronomer",
-				"Discredited academic",
+				"Discredited Academic",
 				"Librarian",
 				"Professor",
 				"Researcher",
-				"Wizard's apprentice",
+				"Wizard's Apprentice",
 				"Scribe"
 			],
 			"personality traits": [
@@ -993,8 +993,8 @@
 				"Cavalry",
 				"Healer",
 				"Quartermaster",
-				"Standard-bearer",
-				"Support staff (cook, blacksmith, or the like)"
+				"Standard-Bearer",
+				"Support Staff (Cook, Blacksmith, or the like)"
 			],
 			"personality traits": [
 				"I'm always polite and respectful.",

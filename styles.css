@@ -54,3 +54,7 @@ button#generate {
 	flex-grow: 1;
 	flex-basis: 0;
 }
+
+.new-page {
+	page-break-before: always;
+}

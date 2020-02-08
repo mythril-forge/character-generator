@@ -165,10 +165,10 @@
 		"extra proficiencies": {
 			"tools": [
 				1,
-				"dice set",
-				"dragonchess set",
-				"playing card set",
-				"three-dragon ante set"
+				"dice",
+				"dragonchess",
+				"playing cards",
+				"three-dragon ante"
 			]
 		},
 		"equipment": [
@@ -642,10 +642,10 @@
 			],
 			"tools": [
 				1,
-				"dice set",
-				"dragonchess set",
-				"playing card set",
-				"three-dragon ante set"
+				"dice",
+				"dragonchess",
+				"playing cards",
+				"three-dragon ante"
 			]
 		},
 		"equipment": [
@@ -963,10 +963,10 @@
 		"extra proficiencies": {
 			"tools": [
 				1,
-				"dice set",
-				"dragonchess set",
-				"playing card set",
-				"three-dragon ante set"
+				"dice",
+				"dragonchess",
+				"playing cards",
+				"three-dragon ante"
 			]
 		},
 		"equipment": [

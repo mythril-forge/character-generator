@@ -43,3 +43,14 @@ button#generate {
 	padding: 1rem 2rem;
 	font-size: 2.5rem;
 }
+
+.columns {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 0;
+}
+
+.columns > * {
+	flex-grow: 1;
+	flex-basis: 0;
+}

@@ -27,6 +27,31 @@ const displayInfo = () => {
 		el.textContent = backText
 	}
 
+	/* HEIGHT WEIGHT & AGE */
+	// identify key info
+	let heightText = UserChar.info['height']
+	const inFeet = Math.floor(heightText / 12)
+	const inInches = heightText % 12
+	heightText = `${inFeet}'`
+	if (inInches > 0) {
+		heightText += `${inInches}"`
+	}
+	const weightText = `${UserChar.info['weight']} lbs.`
+	const ageText = `${UserChar.info['age']} years`
+	// apply to elements
+	const ageEls = document.getElementsByClassName('age-info')
+	const weightEls = document.getElementsByClassName('weight-info')
+	const heightEls = document.getElementsByClassName('height-info')
+	for (const el of ageEls) {
+		el.textContent = ageText
+	}
+	for (const el of weightEls) {
+		el.textContent = weightText
+	}
+	for (const el of heightEls) {
+		el.textContent = heightText
+	}
+
 	/* ABILITY SCORES */
 	// identify key info
 	let abilityInfo = UserChar.info['ability scores']

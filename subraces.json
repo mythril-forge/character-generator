@@ -55,6 +55,10 @@
 			"ability score bonuses": {
 				"wisdom": 1
 			},
+			"base height": 44,
+			"height modifier": [2, 4],
+			"base weight": 115,
+			"weight modifier": [2, 6],
 			"features": {
 				"dwarven toughness": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
 			}
@@ -63,6 +67,10 @@
 			"ability score bonuses": {
 				"strength": 2
 			},
+			"base height": 48,
+			"height modifier": [2, 4],
+			"base weight": 130,
+			"weight modifier": [2, 6],
 			"proficiencies": {
 				"armors": [
 					"light",
@@ -78,6 +86,10 @@
 			"ability score bonuses": {
 				"intelligence": 1
 			},
+			"base height": 54,
+			"height modifier": [2, 10],
+			"base weight": 90,
+			"weight modifier": [1, 4],
 			"movement": 30,
 			"proficiencies": {
 				"weapons": [
@@ -116,6 +128,10 @@
 			"ability score bonuses": {
 				"wisdom": 1
 			},
+			"base height": 54,
+			"height modifier": [2, 10],
+			"base weight": 100,
+			"weight modifier": [1, 4],
 			"movement": 35,
 			"proficiencies": {
 				"weapons": [
@@ -133,6 +149,10 @@
 			"ability score bonuses": {
 				"charisma": 1
 			},
+			"base height": 53,
+			"height modifier": [2, 6],
+			"base weight": 75,
+			"weight modifier": [1, 6],
 			"movement": 30,
 			"proficiencies": {
 				"weapons": [

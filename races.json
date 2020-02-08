@@ -4,6 +4,10 @@
 		"movement": 30,
 		"adult age": 18,
 		"max age": 100,
+		"base height": 56,
+		"height modifier": [2, 10],
+		"base weight": 110,
+		"weight modifier": [2, 4],
 		"proficiencies": {
 			"languages": [
 				"common"
@@ -112,6 +116,10 @@
 		"movement": 30,
 		"adult age": 20,
 		"max age": 180,
+		"base height": 57,
+		"height modifier": [2, 8],
+		"base weight": 110,
+		"weight modifier": [2, 4],
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -176,6 +184,10 @@
 		"movement": 30,
 		"adult age": 14,
 		"max age": 75,
+		"base height": 58,
+		"height modifier": [2, 10],
+		"base weight": 140,
+		"weight modifier": [2, 6],
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -202,6 +214,10 @@
 		"movement": 30,
 		"adult age": 18,
 		"max age": 100,
+		"base height": 57,
+		"height modifier": [2, 8],
+		"base weight": 110,
+		"weight modifier": [2, 4],
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -224,6 +240,10 @@
 		"movement": 25,
 		"adult age": 20,
 		"max age": 150,
+		"base height": 31,
+		"height modifier": [2, 4],
+		"base weight": 35,
+		"weight modifier": [1, 1],
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -246,6 +266,10 @@
 		"movement": 25,
 		"adult age": 40,
 		"max age": 480,
+		"base height": 35,
+		"height modifier": [2, 8],
+		"base weight": 35,
+		"weight modifier": [1, 1],
 		"proficiencies": {
 			"languages": [
 				"common",
@@ -268,6 +292,10 @@
 		"movement": 30,
 		"adult age": 15,
 		"max age": 80,
+		"base height": 66,
+		"height modifier": [2, 8],
+		"base weight": 175,
+		"weight modifier": [2, 6],
 		"proficiencies": {
 			"languages": [
 				"common",

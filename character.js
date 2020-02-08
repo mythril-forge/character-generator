@@ -14,19 +14,22 @@ class Character {
 			] = data
 		})
 		.catch((error) => {
-			console.error("Oh no! Something terrible happened.")
+			console.error('Oh no! Something terrible happened.')
 			new Error(error.message)
 		})
 	}
 
 	generate = () => {
-		/* This info represents all that is needed for a "Level 0" character. */
+		/* This info represents all that is needed for a 'Level 0' character. */
 		this.info = {
 			'race': null,
 			'subrace': null,
 			'background': null,
 			'size': null,
 			'movement': null,
+			'age': null,
+			'weight': null,
+			'height': null,
 			'ability scores': {
 				'strength': 0,
 				'dexterity': 0,
@@ -80,7 +83,7 @@ class Character {
 	_rollForStats = () => {
 		/* These functions see little use other than being helpers here. */
 		// Roll ability scores using virtual dice.
-		// Rules support the standard "4d6 drop lowest" method.
+		// Rules support the standard '4d6 drop lowest' method.
 		const _rollAbilityScores = () => {
 			const results = []
 			for (let i=0; i<6; i++) {
@@ -151,7 +154,7 @@ class Character {
 			} else {
 				subraceData = new Object()
 			}
-			// "datasets" is all we needed out of this block.
+			// 'datasets' is all we needed out of this block.
 			datasets = [raceData, subraceData, backgroundData]
 		}
 
@@ -202,7 +205,7 @@ class Character {
 						[...profs].filter(prof => old.has(prof))
 					)
 					if (intersection.size !== 0) {
-						console.warn("you have redundant skills!")
+						console.warn('you have redundant skills!')
 						console.info(intersection)
 					}
 
@@ -238,7 +241,7 @@ class Character {
 						[...profs].filter(prof => old.has(prof))
 					)
 					if (intersection.size !== 0) {
-						console.warn("you have redundant skills!")
+						console.warn('you have redundant skills!')
 						console.info(intersection)
 					}
 
@@ -303,8 +306,54 @@ class Character {
 				const description = [...rollKeys(1, info)][0]
 				this.info['characteristics'][characteristic] = description
 			})
-			console.log(this.info['characteristics'])
 		})
+
+		// age, height, & weight
+		let maxAge = 0
+		let adultAge = 0
+		let weight = 0
+		let height = 0
+		let weightMod = 0
+		let heightMod = 0
+		datasets.forEach((data) => {
+			if (data['base height'] != undefined) {
+				height = data['base height']
+			}
+			if (data['height modifier'] != undefined) {
+				heightMod = data['height modifier']
+			}
+			if (data['base weight'] != undefined) {
+				weight = data['base weight']
+			}
+			if (data['weight modifier'] != undefined) {
+				weightMod = data['weight modifier']
+			}
+			if (data['max age'] != undefined) {
+				maxAge = data['max age']
+			}
+			if (data['adult age'] != undefined) {
+				adultAge = data['adult age']
+			}
+		})
+		heightMod = [...rollDice(...heightMod)][0]
+		weightMod = [...rollDice(...weightMod)][0]
+
+		const randAge = () => {
+			const minAge = Math.floor(adultAge * 3 / 4)
+			const ageRoll = [...rollDice(1, maxAge - minAge + 1)][0]
+			const result = ageRoll + minAge - 1
+			return ageRoll + minAge - 1
+		}
+
+		let age = new Array()
+		for(let i = 0; i < 20; i += 1) {
+				age.push(randAge())
+		}
+		age = age.sort((a, b) => a - b)
+
+		this.info['weight'] = weight + heightMod
+		this.info['height'] = height + (heightMod + weightMod)
+		this.info['age'] = age[2]
 	}
 }
 

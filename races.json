@@ -33,6 +33,48 @@
 				"sylvan",
 				"undercommon"
 			]
+		},
+		"names": {
+			"Calishite": {
+				"first-male": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir"],
+				"first-female": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida"],
+				"last": ["Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein"]
+			},
+			"Chondathan": {
+				"first-male": ["Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd"],
+				"first-female": ["Arveene", "Esvele", "Chessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele"],
+				"last": ["Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag"]
+			},
+			"Damaran": {
+				"first-male": ["Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor"],
+				"first-female": ["Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora"],
+				"last": ["Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag"]
+			},
+			"Illuskan": {
+				"first-male": ["Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth"],
+				"first-female": ["Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra"],
+				"last": ["Brightwood", "Helder", "Hornraven", "Lackman", "Stormwind", "Windrivver"]
+			},
+			"Mulan": {
+				"first-male": ["Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur"],
+				"first-female": ["Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis"],
+				"last": ["Ankhalab", "Anskuld", "Fezim", "Hahpet", "Nathandem", "Sepret", "Uuthrakt"]
+			},
+			"Rashemi": {
+				"first-male": ["Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak"],
+				"first-female": ["Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra"],
+				"last": ["Chergoba", "Dyernina", "Iltazyara", "Murnyethara", "Stayanoga", "Ulmokina"]
+			},
+			"Shou": {
+				"first-male": ["An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen"],
+				"first-female": ["Bai", "Chao", "Lia", "Lei", "Mei", "Qiao", "Shui", "Tai"],
+				"last": ["Chien", "Huang", "Kao", "Kung", "Lao", "Ling", "Mei", "Pin", "Shin", "Sum", "Tan", "Wan"]
+			},
+			"Turami": {
+				"first-male": ["Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
+				"first-female": ["Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"],
+				"last": ["Agosto", "Astorio", "Calabra", "Domine", "Falone", "Marivaldi", "Pisacar", "Ramondo"]
+			}
 		}
 	},
 
@@ -70,6 +112,13 @@
 			"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 			"dwarven resilience": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
 			"stonecunning": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+		},
+		"names": {
+			"Dwemer": {
+				"first-male": ["Adrik", "Alberich", "Baern", "Barendd", "Brottor", "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim", "Flint", "Gardain", "Harbek", "Kildrak", "Morgran", "Orsik", "Oskar", "Rangrim", "Rurik", "Taklinn", "Thoradin", "Thorin", "Tordek", "Traubon", "Travok", "Ulfgar", "Veit", "Vondal"],
+				"first-female": ["Amber", "Artin", "Audhild", "Bardryn", "Dagnal", "Diesa", "Eldeth", "Falkrunn", "Finellen", "Gunnloda", "Gurdis", "Helja", "Hlin", "Kathra", "Kristryd", "Ilde", "Liftrasa", "Mardred", "Riswynn", "Sannl", "Torbera", "Torgga", "Vistra"],
+				"last": ["Balderk", "Battlehammer", "Brawnanvil", "Dankil", "Fireforge", "Frostbeard", "Gorunn", "Holderhek", "Ironfist", "Loderr", "Lutgehr", "Rumnaheim", "Strakeln", "Torunn", "Ungart"]
+			}
 		}
 	},
 
@@ -96,6 +145,14 @@
 		"features": {
 			"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
 			"trance": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\n\tIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed."
+		},
+		"names": {
+			"Elven": {
+				"first-male": ["Adran", "Aelar", "Aramil", "Arannis", "Aust", "Beiro", "Berrian", "Carric", "Enialis", "Erdan", "Erevan", "Galinndan", "Hadarai", "Heian", "Himo", "Immeral", "Ivellios", "Laucian", "Mindartis", "Paelias", "Peren", "Quarion", "Riardon", "Rolen", "Soveliss", "Thamior", "Tharivol", "Theren", "Varis"],
+				"first-female": ["Adrie", "Althaea", "Anastrianna", "Andraste", "Antinua", "Bethrynna", "Birel", "Caelynn", "Drusilia", "Enna", "Felosial", "Ielenia", "Jelenneth", "Keyleth", "Leshanna", "Lia", "Meriele", "Mialee", "Naivara", "Quelenna", "Quillathe", "Sariel", "Shanairra", "Shava", "Silaqui", "Theirastra", "Thia", "Vadania", "Valanthe", "Xanaphia"],
+				"middle": ["Ara", "Bryn", "Del", "Eryn", "Faen", "Innil", "Lael", "Mella", "Naill", "Naeris", "Phann", "Rael", "Rinn", "Sai", "Syllin", "Thia", "Vall"],
+				"last": ["Amakiir (Gemflower)", "Amastacia (Starflower)", "Galanodel (Moonwhisper)", "Holimion (Diamonddew)", "Ilphelkiir (Gemblossom)", "Liadon (Silverfrond)", "Meliamne (Oakenheel)", "Nailo (Nightbreeze)", "Siannodel (Moonbrook)", "Xiloscient (Goldpetal)"]
+			}
 		}
 	},
 
@@ -171,6 +228,48 @@
 		"features": {
 			"darkvision": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 			"fey ancestry": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+		},
+		"names": {
+			"Calishite": {
+				"first-male": ["Aseir", "Bardeid", "Haseid", "Khemed", "Mehmen", "Sudeiman", "Zasheir"],
+				"first-female": ["Atala", "Ceidil", "Hama", "Jasmal", "Meilil", "Seipora", "Yasheira", "Zasheida"],
+				"last": ["Basha", "Dumein", "Jassan", "Khalid", "Mostana", "Pashar", "Rein"]
+			},
+			"Chondathan": {
+				"first-male": ["Darvin", "Dorn", "Evendur", "Gorstag", "Grim", "Helm", "Malark", "Morn", "Randal", "Stedd"],
+				"first-female": ["Arveene", "Esvele", "Chessail", "Kerri", "Lureene", "Miri", "Rowan", "Shandri", "Tessele"],
+				"last": ["Amblecrown", "Buckman", "Dundragon", "Evenwood", "Greycastle", "Tallstag"]
+			},
+			"Damaran": {
+				"first-male": ["Bor", "Fodel", "Glar", "Grigor", "Igan", "Ivor", "Kosef", "Mival", "Orel", "Pavel", "Sergor"],
+				"first-female": ["Alethra", "Kara", "Katernin", "Mara", "Natali", "Olma", "Tana", "Zora"],
+				"last": ["Bersk", "Chernin", "Dotsk", "Kulenov", "Marsk", "Nemetsk", "Shemov", "Starag"]
+			},
+			"Illuskan": {
+				"first-male": ["Ander", "Blath", "Bran", "Frath", "Geth", "Lander", "Luth", "Malcer", "Stor", "Taman", "Urth"],
+				"first-female": ["Amafrey", "Betha", "Cefrey", "Kethra", "Mara", "Olga", "Silifrey", "Westra"],
+				"last": ["Brightwood", "Helder", "Hornraven", "Lackman", "Stormwind", "Windrivver"]
+			},
+			"Mulan": {
+				"first-male": ["Aoth", "Bareris", "Ehput-Ki", "Kethoth", "Mumed", "Ramas", "So-Kehur", "Thazar-De", "Urhur"],
+				"first-female": ["Arizima", "Chathi", "Nephis", "Nulara", "Murithi", "Sefris", "Thola", "Umara", "Zolis"],
+				"last": ["Ankhalab", "Anskuld", "Fezim", "Hahpet", "Nathandem", "Sepret", "Uuthrakt"]
+			},
+			"Rashemi": {
+				"first-male": ["Borivik", "Faurgar", "Jandar", "Kanithar", "Madislak", "Ralmevik", "Shaumar", "Vladislak"],
+				"first-female": ["Fyevarra", "Hulmarra", "Immith", "Imzel", "Navarra", "Shevarra", "Tammith", "Yuldra"],
+				"last": ["Chergoba", "Dyernina", "Iltazyara", "Murnyethara", "Stayanoga", "Ulmokina"]
+			},
+			"Shou": {
+				"first-male": ["An", "Chen", "Chi", "Fai", "Jiang", "Jun", "Lian", "Long", "Meng", "On", "Shan", "Shui", "Wen"],
+				"first-female": ["Bai", "Chao", "Lia", "Lei", "Mei", "Qiao", "Shui", "Tai"],
+				"last": ["Chien", "Huang", "Kao", "Kung", "Lao", "Ling", "Mei", "Pin", "Shin", "Sum", "Tan", "Wan"]
+			},
+			"Turami": {
+				"first-male": ["Anton", "Diero", "Marcon", "Pieron", "Rimardo", "Romero", "Salazar", "Umbero"],
+				"first-female": ["Balama", "Dona", "Faila", "Jalana", "Luisa", "Marta", "Quara", "Selise", "Vonda"],
+				"last": ["Agosto", "Astorio", "Calabra", "Domine", "Falone", "Marivaldi", "Pisacar", "Ramondo"]
+			}
 		}
 	},
 
@@ -201,6 +300,12 @@
 			"darkvision": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 			"relentless endurance": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.",
 			"savage attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+		},
+		"names": {
+			"Orc": {
+				"first-male": ["Dench", "Feng", "Gell", "Henk", "Holg", "Imsh", "Keth", "Krusk", "Mhurren", "Ront", "Shump", "Thokk"],
+				"first-female": ["Baggi", "Emen", "Engong", "Kansif", "Myev", "Neega", "Ovak", "Ownka", "Shautha", "Vola", "Volen", "Yevelda"]
+			}
 		}
 	},
 
@@ -228,6 +333,13 @@
 			"darkvision": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 			"hellish resistance": "You have resistance to fire damage.",
 			"infernal legacy": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the darkness spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
+		},
+		"names": {
+			"Infernal": {
+				"first-male": ["Akmenos", "Amnon", "Harahas", "Ekernon", "Tados", "Kairon", "Leucis", "Melech", "Morthos", "Pelaios", "Skamos", "Therai"],
+				"first-female": ["Akra", "Anakis", "Bryseis", "Criella", "Ea", "Kallista", "Lerissa", "Makaria", "Nemeia", "Phelaia", "Rieta"],
+				"last": ["Art", "Carrion", "Chant", "Creed", "Despair", "Fear", "Glory", "Hope", "Ideal", "Music", "Nowhere", "Poetry", "Quest", "Random", "Reverence", "Sorrow", "Torment", "Weary"]
+			}
 		}
 	},
 
@@ -254,6 +366,13 @@
 			"lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
 			"brave": "You have advantage on saving throws against being frightened.",
 			"halfling nimbleness": "You can move through the space of any creature that is of a size larger than yours."
+		},
+		"names": {
+			"Halflish": {
+				"first-male": ["Alton", "Ander", "Cade", "Corrin", "Eldon", "Errich", "Finnan", "Garret", "Lindal", "Lyle", "Merric", "Milo", "Osborn", "Perrin", "Reed", "Roscoe", "Wellby"],
+				"first-female": ["Andry", "Bree", "Callie", "Cora", "Euphemia", "Jillian", "Kithri", "Lavinia", "Lidda", "Merla", "Nedda", "Paela", "Portia", "Seraphina", "Shaena", "Trym", "Vani", "Verna"],
+				"last": ["Brushgather", "Goodbarrel", "Greenbottle", "High-hill", "Hilltopple", "Leagallow", "Tealeaf", "Thorngage", "Tosscobble", "Underbough"]
+			}
 		}
 	},
 
@@ -279,6 +398,14 @@
 		"features": {
 			"darkvision": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
 			"gnome cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+		},
+		"names": {
+			"Gnomish": {
+				"first-male": ["Alston", "Alvyn", "Boddynock", "Brocc", "Ettrgell", "Dimble", "Eldon", "Erky", "Fonkin", "Frug", "Gerbo", "Gimble", "Glim", "Jebeddo", "Kellen", "Namfoodle. Orryn", "Roondar", "Seebo", "Warryn", "Wrenn", "Zook"],
+				"first-female": ["Bimpnottin", "Breena", "Caramip", "Carlin", "Donella", "Duvamil", "Ella", "Ellyjobell", "Ellywick", "Lilli", "Loopmottin", "Lorilla", "Mardnab", "Nissa", "Nyx", "Oda", "Orla", "Roywyn", "Shamil", "Tana", "Waywocket", "Zanna"],
+				"middle": ["Aleslosh", "Aslthearth", "Badger", "Cloak", "Doublelock", "Filchbatter", "Fnipper", "Ku", "Nina", "Oneshoe", "Pock", "Sparklegem", "Scumbleduck"],
+				"last": ["Beren", "Daergel", "Folkor", "Garrick", "Nackle", "Murnig", "Ningcl", "Raulnor", "Seheppen", "Timbers", "Turen"]
+			}
 		}
 	},
 
@@ -301,6 +428,14 @@
 				"common",
 				"draconic"
 			]
+		},
+		"names": {
+			"Draconic": {
+				"first-male": ["Arjhan", "Balasar", "Bharash", "Donaar", "Ghesh", "Hesken", "Kriv", "Medrash", "Mehen", "Nadarr", "Pandjed", "Patrin", "Rhogar", "Shamash", "Shedinn", "Tarhun", "Torinn"],
+				"first-female": ["Akra", "Biri", "Daar", "Farideh", "Harann", "Havilar", "Jheri", "Kava", "Korinn", "Mishann", "Nala", "Perra", "Raiann", "Sora", "Surina", "Thava", "Uadjit"],
+				"middle": ["Climber", "Earbenden", "Leaper", "Pious", "Shieldbiter", "Zealous"],
+				"last": ["Clethtinthiallor", "Daardendrian", "Delmirev", "Drachedandion", "Fenkenkabradon", "Kepeshkmolik", "Kerrhylon", "Kimbatuul", "Linxakasendalor", "Myastan", "Nemmonis", "Narixius", "Ophinstalajiir", "Prexijandilin", "Shestendeliath", "Turnuroth", "Verthisathurgiesh", "Yarjerit"]
+			}
 		}
 	}
 }

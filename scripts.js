@@ -38,10 +38,13 @@ const displayInfo = () => {
 	}
 	const weightText = `${UserChar.info['weight']} lbs.`
 	const ageText = `${UserChar.info['age']} years`
+	const nameText = UserChar.info['name']
+	console.warn(nameText)
 	// apply to elements
 	const ageEls = document.getElementsByClassName('age-info')
 	const weightEls = document.getElementsByClassName('weight-info')
 	const heightEls = document.getElementsByClassName('height-info')
+	const nameEls = document.getElementsByClassName('name-info')
 	for (const el of ageEls) {
 		el.textContent = ageText
 	}
@@ -50,6 +53,9 @@ const displayInfo = () => {
 	}
 	for (const el of heightEls) {
 		el.textContent = heightText
+	}
+	for (const el of nameEls) {
+		el.textContent = nameText
 	}
 
 	/* ABILITY SCORES */

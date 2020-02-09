@@ -27,6 +27,7 @@ class Character {
 			'background': null,
 			'size': null,
 			'movement': null,
+			'name': null,
 			'age': null,
 			'weight': null,
 			'height': null,
@@ -306,6 +307,46 @@ class Character {
 				const description = [...rollKeys(1, info)][0]
 				this.info['characteristics'][characteristic] = description
 			})
+		})
+
+		// names
+		datasets.forEach((data) => {
+			if (data['names'] !== undefined) {
+				// setup
+				let names = new Array()
+				let nameData
+				let key
+
+				// get nameData
+				const keys = Object.keys(data['names'])
+				key = [...rollKeys(1, keys)][0]
+				nameData = data['names'][key]
+
+				// roll gender
+				if ([...rollDice(1, 2)][0] === 1) {
+					key = 'first-female'
+				} else {
+					key = 'first-male'
+				}
+				// roll first-name
+				if (key in nameData) {
+					names.push([...rollKeys(1, nameData[key])][0])
+				}
+
+				// roll middle-name
+				key = 'middle'
+				if (key in nameData) {
+					names.push([...rollKeys(1, nameData[key])][0])
+				}
+
+				// roll last-name
+				key = 'last'
+				if (key in nameData) {
+					names.push([...rollKeys(1, nameData[key])][0])
+				}
+
+				this.info['name'] = names.join(' ')
+			}
 		})
 
 		// age, height, & weight

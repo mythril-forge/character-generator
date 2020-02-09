@@ -205,13 +205,15 @@ class Character {
 					let intersection = new Set(
 						[...profs].filter(prof => old.has(prof))
 					)
+					let extra = new Set()
 					if (intersection.size !== 0) {
 						console.warn('you have redundant skills!')
 						console.info(intersection)
+						extra.add('+1 skill of your choice')
 					}
 
 					// add contents to proficiency type
-					this.info[key][type] = new Set([...old, ...profs])
+					this.info[key][type] = new Set([...old, ...profs, ...extra])
 				})
 			}
 		})
@@ -241,13 +243,15 @@ class Character {
 					let intersection = new Set(
 						[...profs].filter(prof => old.has(prof))
 					)
+					let extra = new Set()
 					if (intersection.size !== 0) {
 						console.warn('you have redundant skills!')
 						console.info(intersection)
+						extra.add('+1 skill of your choice')
 					}
 
 					// add contents to proficiency type
-					this.info['proficiencies'][type] = new Set([...old, ...profs])
+					this.info['proficiencies'][type] = new Set([...old, ...profs, ...extra])
 				})
 			}
 		})

@@ -39,7 +39,6 @@ const displayInfo = () => {
 	const weightText = `${UserChar.info['weight']} lbs.`
 	const ageText = `${UserChar.info['age']} years`
 	const nameText = UserChar.info['name']
-	console.warn(nameText)
 	// apply to elements
 	const ageEls = document.getElementsByClassName('age-info')
 	const weightEls = document.getElementsByClassName('weight-info')

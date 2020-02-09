@@ -58,3 +58,10 @@ button#generate {
 .new-page {
 	page-break-before: always;
 }
+
+.race-info,
+.background-info,
+.name-info,
+.size-info {
+	text-transform: capitalize;
+}

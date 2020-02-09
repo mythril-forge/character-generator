@@ -231,6 +231,10 @@
 	"entertainer": {
 		"proficiencies": {
 			"skills": [
+				"acrobatics",
+				"performance"
+			],
+			"tools": [
 				"disguise kit"
 			]
 		},
